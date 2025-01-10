@@ -1,0 +1,22 @@
+{
+    "name": "futurum6/timelinesai",
+    "description": "Timelines.ai API client for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TimelinesAI\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TimelinesAI\\TimelinesAIServiceProvider"
+            ]
+        }
+    }
+}
