@@ -14,7 +14,7 @@ class TimelinesAI
     {
         $this->apiKey = $apiKey;
         $this->httpClient = new Client([
-            'base_uri' => 'https://api.timelines.ai/v1/',
+            'base_uri' => 'https://app.timelines.ai/integrations/api/',
             'headers' => [
                 'Authorization' => "Bearer {$this->apiKey}",
                 'Content-Type' => 'application/json',
@@ -24,11 +24,13 @@ class TimelinesAI
 
     public function sendMessage(string $phone, string $message): array
     {
+
         try {
             $response = $this->httpClient->post('messages', [
                 'json' => [
-                    'phone' => $phone,
-                    'message' => $message,
+                    'phone' => '+'.$phone,
+                    'whatsapp_account_phone' => '+'.$phone,
+                    'text' => $message,
                 ],
             ]);
 
