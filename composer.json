@@ -1,5 +1,5 @@
 {
-    "name": "futurum6/timelinesai",
+    "name": "futurum/timelinesai",
     "description": "Timelines.ai API client for Laravel",
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TimelinesAI\\TimelinesAIServiceProvider"
+                "Futurum\\TimelinesAI\\TimelinesAIServiceProvider"
             ]
         }
     }
