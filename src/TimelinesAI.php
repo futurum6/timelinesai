@@ -1,6 +1,6 @@
 <?php
 
-namespace TimelinesAI;
+namespace Futurum\TimelinesAI;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
